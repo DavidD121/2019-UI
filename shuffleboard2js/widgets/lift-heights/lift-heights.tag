@@ -1,4 +1,3 @@
-
 <lift-heights>
     <svg width='100%' height='100%' viewBox="0 0 100 100">
         <image xlink:href="/widgets/lift-heights/rocket_ship_transparent.png" x="52%" y="0" height="100%" width="50%"/>
@@ -34,14 +33,16 @@
                 let target = ev.target;
                 let heightIndex = this.heights_array.indexOf($(target).attr('class').split(' ')[1]);
                 console.log(heightIndex);
+                console.log('============');
+                console.log(this.opts.ntRoot, heightIndex);
+                console.log('============');
                 NetworkTables.putValue(this.opts.ntRoot, heightIndex);
-                console.log(this.heights_array[this.opts.table]);
+                console.log(this.heights_array[heightIndex]);
                 console.log(this.opts.table);
             });
         });
 
         this.on('update', () => {
-            console.log('heynow');
             setTimeout(() => {
                 $('.button').css('fill-opacity', 0);
                 $("."+ this.heights_array[this.opts.table]).css('fill-opacity', .7);
