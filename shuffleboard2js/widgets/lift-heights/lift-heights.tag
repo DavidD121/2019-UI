@@ -2,6 +2,10 @@
     <svg width='100%' height='100%' viewBox="0 0 100 100">
         <image xlink:href="/widgets/lift-heights/rocket_ship_transparent.png" x="52%" y="0" height="100%" width="50%"/>
 
+        <!-- Hatch Pickup -->
+        <text x = "0" y = '10%' font-size = '5px '>hatch pickup</text>
+        <circle class = "button hatch-pickup" cx = '15%' cy = '20%' r = '7%' style="fill:lime;fill-opacity:0;stroke:black;stroke-width:.8"/>
+
         <!-- Rocket ball button SVG elements -->
         <ellipse class = 'button top-ball' cx = '67.3%' cy = '38%' rx = '4%' ry = '5%' style="fill:lime;fill-opacity:0;stroke:black;stroke-width:.8"/>
         <ellipse class = 'button mid-ball' cx = '67.3%' cy = '55%' rx = '4%' ry = '5%' style="fill:lime;fill-opacity:0;stroke:black;stroke-width:.8"/>
@@ -26,7 +30,7 @@
 
 
     <script>   
-        this.heights_array = ['zero','cargo-hatch','bot-hatch', 'bot-ball', 'cargo-ball', 'mid-hatch','mid-ball','top-hatch', 'top-ball'];
+        this.heights_array = ['zero','hatch-pickup','cargo-hatch','bot-hatch', 'bot-ball', 'cargo-ball', 'mid-hatch','mid-ball','top-hatch', 'top-ball'];
         this.on('mount', () => {
 
             $('.button').on('click', (ev) => {

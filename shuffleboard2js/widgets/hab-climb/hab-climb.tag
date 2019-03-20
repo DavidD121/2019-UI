@@ -16,7 +16,7 @@
         this.on('mount', () => {
 
             $('.rect-button').on('click', () => {
-                NetworkTables.putValue(this.opts.ntRoot, !this.opts.table)
+                NetworkTables.putValue(this.opts.ntRoot, !this.opts.table);
 
             if(!this.opts.table) {
                 $('.pressed').css('opacity', 1);

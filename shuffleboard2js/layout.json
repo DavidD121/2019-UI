@@ -4,31 +4,31 @@
             "header": "Tab 1",
             "widgets": [
                 {
-                    "col": 11,
-                    "ntRoot": "/time/match-time",
-                    "row": 7,
-                    "sizeX": 7,
-                    "sizeY": 3,
-                    "widgetTitle": "",
-                    "widgetType": "timer"
+                    "col": 1,
+                    "ntRoot": "/lifts/front_lift_heights_index",
+                    "row": 1,
+                    "sizeX": 10,
+                    "sizeY": 9,
+                    "widgetTitle": "Lift Heights",
+                    "widgetType": "lift-heights"
                 },
                 {
                     "col": 11,
                     "ntRoot": "/lifts/climb_toggle",
-                    "row": 1,
-                    "sizeX": 7,
-                    "sizeY": 6,
-                    "widgetTitle": "Crabitat",
+                    "row": 4,
+                    "sizeX": 6,
+                    "sizeY": 5,
+                    "widgetTitle": "Hab Climb",
                     "widgetType": "hab-climb"
                 },
                 {
-                    "col": 1,
-                    "ntRoot": null,
+                    "col": 11,
+                    "ntRoot": "/time/match-time",
                     "row": 1,
-                    "sizeX": 10,
-                    "sizeY": 9,
-                    "widgetTitle": "HOwdy Gang",
-                    "widgetType": "lift-heights"
+                    "sizeX": 6,
+                    "sizeY": 3,
+                    "widgetTitle": "Timer",
+                    "widgetType": "timer"
                 }
             ]
         }
